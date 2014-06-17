@@ -15,10 +15,10 @@ class Header
 // F3 - Loading Screen
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 
-onLoadName = "*** Insert mission name here. ***";
-onLoadMission = "Made with the F3 Mission Development Framework";
-author = "*** Insert mission author name here. ***";
-loadScreen = "logo.paa";
+onLoadName = "PointFire Framework";
+onLoadMission = "A framework for Point Fire missions based on F3.";
+author = "PointFire";
+loadScreen = "logo.jpg";
 
 // ============================================================================================
 

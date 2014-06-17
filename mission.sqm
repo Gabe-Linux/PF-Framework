@@ -68,7 +68,7 @@ class Mission
 	class Intel
 	{
 		briefingName="F3";
-		overviewText="*** Insert mission description here. ***";
+		overviewText="A framework for Point Fire missions based on F3.";
 		startWeather=0;
 		startWind=0;
 		forecastWeather=1;
