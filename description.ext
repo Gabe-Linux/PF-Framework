@@ -1,8 +1,3 @@
-// ============================================================================================
-
-// F3 - Mission Header
-// Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
-
 class Header
 {
 	gameType = Coop;
@@ -10,27 +5,13 @@ class Header
 	maxPlayers = 405;
 };
 
-// ============================================================================================
-
-// F3 - Loading Screen
-// Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
-
 onLoadName = "PointFire Framework";
 onLoadMission = "A framework for Point Fire missions based on F3.";
-author = "PointFire";
+author = "Point Fire";
 loadScreen = "logo.jpg";
 
-// ============================================================================================
-
-// F3 - Debug Console
-// Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
-
-enableDebugConsole = 1;
-
-// ============================================================================================
-
-// F3 - Respawn Settings
-// Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
+//enableDebugConsole = 1;
+//disabledAI = 1;
 
 respawn = 1;
 respawndelay = 3;
@@ -38,7 +19,6 @@ respawnOnStart = 0;
 respawnTemplates[] = {"f_spectator","f_JIP"};
 
 // ============================================================================================
-
 
 // F3 - Start of Notifications block.
 
@@ -70,22 +50,6 @@ class cfgNotifications
 		title = "SAFE START";
 		description = "%1";
 		iconPicture="\A3\UI_F\data\IGUI\Cfg\Actions\settimer_ca.paa";
-		duration = 3;
-	};
-
-	// Notification for the F3 Authorised Crew Component
-	class UnauthorisedCrew {
-		title= "NON-AUTHORISED CREW!";
-		description= "%1";
-		iconPicture = "\A3\ui_f\data\map\markers\military\warning_ca.paa";
-		duration = 3;
-	};
-
-	// Notification for the F3 Authorised Crew Component
-	class MapClickTeleport {
-		title= "NOTE";
-		description= "%1";
-		iconPicture = "\A3\ui_f\data\map\markers\military\start_ca.paa";
 		duration = 3;
 	};
 
@@ -145,7 +109,7 @@ class Params
             title = "Radio System";
             values[] = {0,1,2};
             texts[] = {"Off","ACRE", "TFR"};
-            default = 0;
+            default = 2;
             code = "f_var_radios = %1";
     };
 
@@ -200,38 +164,6 @@ class Params
  		isGlobal = 0;						// Execute this only on the server
  		code = "f_param_timeOfDay = %1";
 	};
-
-// ============================================================================================
-
-// F3 - AI Skill Selector
-// Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
-
-//	class f_param_AISkill_BLUFOR
-//	{
-//		title = "$STR_f_param_AISkill_BLUFOR";
-//		values[] = {0,1,2,3};
-//		texts[] = {$STR_f_param_AISkill_Option0,$STR_f_param_AISkill_Option1,$STR_f_param_AISkill_Option2,$STR_f_param_AISkill_Option3};
-//		default = 1;
-//		code = "f_param_AISkill_BLUFOR = %1";
-//	};
-//
-//	class f_param_AISkill_OPFOR
-//	{
-//		title = "$STR_f_param_AISkill_OPFOR";
-//		values[] = {0,1,2,3};
-//		texts[] = {$STR_f_param_AISkill_Option0,$STR_f_param_AISkill_Option1,$STR_f_param_AISkill_Option2,$STR_f_param_AISkill_Option3};
-//		default = 1;
-//		code = "f_param_AISkill_OPFOR = %1";
-//	};
-//
-//	class f_param_AISkill_INDP
-//	{
-//		title = "$STR_f_param_AISkill_INDP";
-//		values[] = {0,1,2,3};
-//		texts[] = {$STR_f_param_AISkill_Option0,$STR_f_param_AISkill_Option1,$STR_f_param_AISkill_Option2,$STR_f_param_AISkill_Option3};
-//		default = 1;
-//		code = "f_param_AISkill_INDP = %1";
-//	};
 
 // ============================================================================================
 
@@ -410,45 +342,16 @@ class CfgFunctions
 		class groupMarkers {
 			file = "f\groupMarkers";
 			class localGroupMarker{};
-			class localSpecialistMarker{};
-		};
-		class authorisedCrew
-		{
-			file = "f\authorisedCrew";
-			class authorisedCrewCheck {};
-		};
-		class FTMemberMarkers
-		{
-			file = "f\FTMemberMarkers";
-			class SetLocalFTMemberMarkers{};
-			class GetMarkerColor{};
-			class LocalFTMarkerSync{};
 		};
 		class bodyRemoval
 		{
 			file = "f\removeBody";
 			class removeBody{};
 		};
-		class setAISkill
-		{
-			file = "f\setAISKill";
-			class setAISKill{};
-		};
-		class mapClickTeleport
-		{
-			file = "f\mapClickTeleport";
-			class mapClickTeleportUnit{};
-			class mapClickTeleportGroup{};
-		};
 		class nametag
 		{
 			file = "f\nametag";
 			class drawNameTag{};
-		};
-		class preMount
-		{
-			file = "f\preMount";
-			class mountGroups{};
 		};
 		class radios
 		{
@@ -462,7 +365,6 @@ class CfgFunctions
 			class tfr_setRadioFrequencies{};
 			class tfr_configureSpectatorChat{};
 		};
-		#include "f\simplewoundingsystem\config.hpp"
 		#include "f\spect\functions.hpp"
 
 	};
