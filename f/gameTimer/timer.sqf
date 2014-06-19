@@ -7,9 +7,9 @@ _clientTimer = {
 		gameTimer < 1;
 	};
 	hint "The game has begun!";
-//	if (pf_var_canSpawnSecondRadio) then {
+	if (f_param_spawn_radio == 1) then {
 		player addAction ["Spawn Radio", "f\gameTimer\spawnRadio.sqf", "", 1, false, true, "", "((leader (group player) == player) && (player getVariable ['pf_var_canSpawnRadio', true]))"];
-//	};
+	};
 	[] execVM "f\gameTimer\clientBegin.sqf";
 };
 

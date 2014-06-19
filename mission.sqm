@@ -280,12 +280,12 @@ class Mission
 					position[]={8453.3369,25.28837,10884.107};
 					id=12;
 					side="WEST";
-					vehicle="B_Soldier_AAR_F";
+					vehicle="B_Soldier_GL_F";
 					player="PLAY CDG";
 					skill=0.60000002;
-					text="UnitNATO_A1_AAR";
-					init="GrpNATO_A1 = group this; [""aar"",this] call f_fnc_assignGear;";
-					description="NATO Alpha 1 Assistant Automatic Rifleman";
+					text="UnitNATO_A1_GREN";
+					init="GrpNATO_A1 = group this; [""gren"",this] call f_fnc_assignGear;";
+					description="NATO Alpha 1 Grenadier";
 				};
 				class Item3
 				{
@@ -338,12 +338,12 @@ class Mission
 					position[]={8452.9619,24.120289,10868.159};
 					id=16;
 					side="WEST";
-					vehicle="B_Soldier_AAR_F";
+					vehicle="B_Soldier_GL_F";
 					player="PLAY CDG";
 					skill=0.60000002;
-					text="UnitNATO_A2_AAR";
-					init="GrpNATO_A2 = group this; [""aar"",this] call f_fnc_assignGear;";
-					description="NATO Alpha 2 Assistant Automatic Rifleman";
+					text="UnitNATO_A2_GREN";
+					init="GrpNATO_A2 = group this; [""gren"",this] call f_fnc_assignGear;";
+					description="NATO Alpha 2 Grenadier";
 				};
 				class Item3
 				{
@@ -396,12 +396,12 @@ class Mission
 					position[]={8453.1689,23.702587,10850.822};
 					id=20;
 					side="WEST";
-					vehicle="B_Soldier_AAR_F";
+					vehicle="B_Soldier_GL_F";
 					player="PLAY CDG";
 					skill=0.60000002;
-					text="UnitNATO_A3_AAR";
-					init="GrpNATO_A3 = group this; [""aar"",this] call f_fnc_assignGear;";
-					description="NATO Alpha 3 Assistant Automatic Rifleman";
+					text="UnitNATO_A3_GREN";
+					init="GrpNATO_A3 = group this; [""gren"",this] call f_fnc_assignGear;";
+					description="NATO Alpha 3 Grenadier";
 				};
 				class Item3
 				{

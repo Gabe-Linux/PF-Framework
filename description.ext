@@ -102,19 +102,6 @@ class Params
 
 // ============================================================================================
 
-// PointFire - Game Timer
-
-    class f_param_mission_timer
-    {
-            title = "$STR_f_param_mission_timer";
-            values[] = {0,1,2,3,4,5,6,7,8,9,10};
-            texts[] = {"$STR_f_param_mission_timer_off","1","2","3","4","5","6","7","8","9","10"};
-            default = 3;
-            code = "f_param_game_timer = %1";
-    };
-
-// ============================================================================================
-
 // F3 - Caching
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 
@@ -125,6 +112,32 @@ class Params
 		default = 1500;
 		code = "f_param_caching = %1";
 	};
+
+// ============================================================================================
+
+// PointFire - Game Timer
+
+    class f_param_game_timer
+    {
+            title = "$STR_f_param_mission_timer";
+            values[] = {0,1,2,3,4,5,6,7,8,9,10};
+            texts[] = {"$STR_f_param_mission_timer_off","1","2","3","4","5","6","7","8","9","10"};
+            default = 3;
+            code = "f_param_game_timer = %1";
+    };
+
+// ============================================================================================
+
+// PointFire - Spawn Radio
+
+    class f_param_spawn_radio
+    {
+            title = "Spawn Radio";
+            values[] = {0, 1};
+            texts[] = {"Disabled", "Enabled"};
+            default = 1;
+            code = "f_param_spawn_radio = %1";
+    };
 
 // ============================================================================================
 
