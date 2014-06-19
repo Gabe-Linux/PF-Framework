@@ -145,6 +145,14 @@ _bagmedium = "B_FieldPack_khk";			// carries 240, weighs 30
 _baglarge =  "B_Carryall_mcamo"; 		// carries 320, weighs 40
 _bagmediumdiver =  "B_AssaultPack_blk";	// used by divers
 _baguav = "B_UAV_01_backpack_F";		// used by UAV operator
+_bagmedic = "B_Kitbag_mcamo"; 			// Used by medics
+
+// AGM Items
+_bandage = "AGM_Bandage";
+_morphine = "AGM_Morphine";
+_epipen = "AGM_Epipen";
+_bloodbag = "AGM_Bloodbag";
+_earplugs = "AGM_EarBuds";
 
 // ====================================================================================
 
@@ -205,7 +213,7 @@ _specOp = [];
 // Basic clothing
 // The outfit-piece is randomly selected from the array for each unit
 _baseUniform = ["U_B_CombatUniform_mcam","U_B_CombatUniform_mcam_tshirt","U_B_CombatUniform_mcam_vest"];
-_baseHelmet = ["H_HelmetB","H_HelmetB_plain_mcamo"];
+_baseHelmet = ["H_HelmetB_grass"];
 _baseGlasses = [];
 
 // Armored vests
@@ -270,9 +278,14 @@ if (_isMan) then {
 	removeBackpack _unit;
 	removeallweapons _unit;
 
-	// We add a single first aid kit (FAK)
+	// Add 5 AGM bandages and earplugs
 
-	_unit addItem _firstaid;
+	_unit addItem _bandage;
+	_unit addItem _bandage;
+	_unit addItem _bandage;
+	_unit addItem _bandage;
+	_unit addItem _bandage;
+	_unit addItem _earplugs;
 
 	// The following code removes any pre-added NVGs
 
@@ -282,7 +295,7 @@ if (_isMan) then {
 		_unit removeItem _nvg;
 	};
 	// uncomment to remove nvgoogles
-	_unit linkItem _nvg;					// add universal NVG for this faction
+	//_unit linkItem _nvg;					// add universal NVG for this faction
 
 	//removeAllItems _unit;						// remove default items: map, compass, watch, radio (and GPS for team/squad leaders)
 	//_unit linkItem "ItemGPS"; 					// add gps to this faction

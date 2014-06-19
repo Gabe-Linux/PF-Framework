@@ -147,8 +147,16 @@ _bagmedium = "B_FieldPack_khk";				// carries 200, weighs 30
 _baglarge =  "B_Carryall_oli"; 				// carries 320, weighs 60
 _bagmediumdiver =  "B_AssaultPack_blk";		// used by divers
 _baguav = "B_UAV_01_backpack_F";			// used by UAV operator - BLUFOR FIA
+_bagmedic = "B_Kitbag_mcamo"; 				// Used by medics
 //_baguav = "O_UAV_01_backpack_F";			// used by UAV operator - OPFOR FIA
 //_baguav = "I_UAV_01_backpack_F";			// used by UAV operator - INDP FIA
+
+// AGM Items
+_bandage = "AGM_Bandage";
+_morphine = "AGM_Morphine";
+_epipen = "AGM_Epipen";
+_bloodbag = "AGM_Bloodbag";
+_earplugs = "AGM_EarBuds";
 
 // ====================================================================================
 
@@ -272,9 +280,14 @@ if (_isMan) then {
 	removeBackpack _unit;
 	removeallweapons _unit;
 
-	// We add a single first aid kit (FAK)
+	// Add 5 AGM bandages and earplugs
 
-	_unit addItem _firstaid;
+	_unit addItem _bandage;
+	_unit addItem _bandage;
+	_unit addItem _bandage;
+	_unit addItem _bandage;
+	_unit addItem _bandage;
+	_unit addItem _earplugs;
 
 	// The following code removes any pre-added NVGs
 
@@ -284,7 +297,7 @@ if (_isMan) then {
 		_unit removeItem _nvg;
 	};
 	// uncomment to remove nvgoogles
-	_unit linkItem _nvg;					// add universal NVG for this faction
+	//_unit linkItem _nvg;					// add universal NVG for this faction
 
 	//removeAllItems _unit;						// remove default items: map, compass, watch, radio (and GPS for team/squad leaders)
 	//_unit linkItem "ItemGPS"; 					// add gps to this faction

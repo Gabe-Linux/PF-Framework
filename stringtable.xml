@@ -160,7 +160,7 @@
         <English> Select Reinforcement Options</English>
       </Key>
       <Key ID="STR_f_param_mission_timer">
-        <English> Safe Start (mins) </English>
+        <English> Game Timer (mins) </English>
       </Key>
       <Key ID="STR_f_param_mission_timer_off">
         <English> Off </English>
