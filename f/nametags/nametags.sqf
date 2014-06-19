@@ -1,8 +1,8 @@
-// PointFire - Player Name-tag Script (Thanks to KillzoneKid)
+// PointFire - Player Nametag Script (Thanks to KillzoneKid)
 if (!hasInterface) exitWith {};
 _nametag = {
     _x = _this select 0;
-    waitUntil {!isNull _x};
+    waitUntil {sleep 0.1; !isNull player};
     _x setVariable ["pf_nametag", _x addAction ["", "", "", 0, false, false, "", "
     if (!alive _target) exitWith {
         _target removeAction (_target getVariable 'pf_nametag');
@@ -15,7 +15,8 @@ _nametag = {
     };
     _dist = (_this distance _target) / 15;
     pf_nametagColor set [3, 1 - _dist];
-    _desc = [str _target, '_'] call CBA_fnc_split;
+    _group = [groupID (group _target), ' '] call CBA_fnc_split;
+    _class = toUpper(_target getVariable 'f_var_assignGear');
     drawIcon3D [
         '',
         pf_nametagColor,
@@ -30,21 +31,22 @@ _nametag = {
         0,
         0,
         0,
-        name _target + ' (' + (_desc select 1) + '-' + (_desc select 2) + ')',
+        name _target + ' (' + toUpper(_group select 1) + '-' + (_class) + ')',
         2,
         0.03,
-        'PuristaMedium'
+        'PuristaBold'
     ];
     false
     "]];
 };
 {
     if ((side _x) == playerSide) then {
-        if (isNil "(_x getVariable 'pf_nametag')") then {
+        if (_x getVariable ["pf_nametag", 1] == 1) then {
             [_x] call _nametag;
         };
     };
 } forEach (playableUnits - [player]);
+
 _nametagIncludes = {
     _x = _this select 0;
     waitUntil {!isNull _x};
@@ -55,7 +57,6 @@ _nametagIncludes = {
     pf_nametagColor = [0.2, 0, 0.4, 1];
     _dist = (_this distance _target) / 15;
     pf_nametagColor set [3, 1 - _dist];
-    _desc = [str _target, '_'] call CBA_fnc_split;
     drawIcon3D [
         '',
         pf_nametagColor,
@@ -73,7 +74,7 @@ _nametagIncludes = {
         name _target,
         2,
         0.03,
-        'PuristaMedium'
+        'PuristaLight'
     ];
     false
     "]];
@@ -81,7 +82,7 @@ _nametagIncludes = {
 _include = _this select 0;
 if (!isNil "_include") then {
 	{
-	    if (isNil "(_x getVariable 'pf_nametag')") then {
+	    if (_x getVariable ["pf_nametag", 1] == 1) then {
 	        [_x] call _nametagIncludes;
 	    };
 	} forEach (_include - [player]);
