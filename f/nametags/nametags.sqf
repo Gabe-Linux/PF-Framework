@@ -2,7 +2,7 @@
 if (!hasInterface) exitWith {};
 _nametag = {
     _x = _this select 0;
-    waitUntil {sleep 0.1; !isNull player};
+    waitUntil {sleep 0.1; !isNull _x};
     _x setVariable ["pf_nametag", _x addAction ["", "", "", 0, false, false, "", "
     if (!alive _target) exitWith {
         _target removeAction (_target getVariable 'pf_nametag');
