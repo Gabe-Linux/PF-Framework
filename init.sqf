@@ -8,7 +8,7 @@ enableRadio false;
 [] execVM "f\gameTimer\timer.sqf";
 
 // PointFire - Nametags
-[[[[]], "f\nametags\nametags.sqf"], "BIS_fnc_execVM", true, true] spawn BIS_fnc_MP;
+[[[], f_fnc_nametags], "BIS_fnc_spawn", true, true] spawn BIS_fnc_MP;
 
 // Outlawled - Mag Repack
 [] execVM "outlw_magRepack\MagRepack_init_sv.sqf";

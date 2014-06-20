@@ -314,6 +314,11 @@ class CfgFunctions
 			class tfr_setRadioFrequencies{};
 			class tfr_configureSpectatorChat{};
 		};
+		class nametags
+		{
+			file = "f\nametags";
+			class nametags{};
+		};
 		#include "f\spect\functions.hpp"
 
 	};
