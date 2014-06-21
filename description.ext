@@ -2,7 +2,7 @@ class Header
 {
 	gameType = Coop;
 	minPlayers = 1;
-	maxPlayers = 405;
+	maxPlayers = 461;
 };
 
 onLoadName = "PointFire Framework";
@@ -318,6 +318,11 @@ class CfgFunctions
 		{
 			file = "f\nametags";
 			class nametags{};
+		};
+		class misc
+		{
+			file = "f\misc";
+			class sideMarker{};
 		};
 		#include "f\spect\functions.hpp"
 
