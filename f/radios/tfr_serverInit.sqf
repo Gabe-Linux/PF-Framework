@@ -25,8 +25,8 @@ if(!f_radios_settings_tfr_indepUseRadioCode) then {
 
   _friendWest = (resistance getFriend West);
   _friendEast = (resistance getFriend east);
-  _bluefor = tf_west_radio_code;
-  _opfor = tf_east_radio_code;
+  _bluefor = if (isNil "tf_west_radio_code") then [{"_bluefor"}, {tf_west_radio_code}];
+  _opfor = if (isNil "tf_east_radio_code") then [{"_opfor"}, {tf_east_radio_code}];
 
   if ((_friendWest > 0.6) && (_friendEast < 0.6)) then {
     tf_guer_radio_code = _bluefor;
