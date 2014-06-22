@@ -69,7 +69,7 @@ switch (_mkrType) do
 		_mkrName setMarkerColorLocal _mkrColor;
 		_mkrName setMarkerSizeLocal [0.8, 0.8];
 		_mkrName setMarkerTextLocal _mkrText;
-		_mkrName setMarkerAlphaLocal 0.5;
+		_mkrName setMarkerAlphaLocal 0.6;
 	};
 // Fireteam
 	case 1:
@@ -80,7 +80,7 @@ switch (_mkrType) do
 		_mkrName setMarkerColorLocal _mkrColor;
 		_mkrName setMarkerSizeLocal [0.8, 0.8];
 		_mkrName setMarkerTextLocal _mkrText;
-		_mkrName setMarkerAlphaLocal 0.5;
+		_mkrName setMarkerAlphaLocal 0.6;
 	};
 // Machineguns (MMG, HMG)
 	case 2:
@@ -91,7 +91,7 @@ switch (_mkrType) do
 		_mkrName setMarkerColorLocal _mkrColor;
 		_mkrName setMarkerSizeLocal [0.8, 0.8];
 		_mkrName setMarkerTextLocal _mkrText;
-		_mkrName setMarkerAlphaLocal 0.5;
+		_mkrName setMarkerAlphaLocal 0.6;
 	};
 // Launchers (MAT, HAT, SAM)
 	case 3:
@@ -102,7 +102,7 @@ switch (_mkrType) do
 		_mkrName setMarkerColorLocal _mkrColor;
 		_mkrName setMarkerSizeLocal [0.8, 0.8];
 		_mkrName setMarkerTextLocal _mkrText;
-		_mkrName setMarkerAlphaLocal 0.5;
+		_mkrName setMarkerAlphaLocal 0.6;
 	};
 // Sniper Team
 	case 4:
@@ -113,7 +113,7 @@ switch (_mkrType) do
 		_mkrName setMarkerColorLocal _mkrColor;
 		_mkrName setMarkerSizeLocal [0.8, 0.8];
 		_mkrName setMarkerTextLocal _mkrText;
-		_mkrName setMarkerAlphaLocal 0.5;
+		_mkrName setMarkerAlphaLocal 0.6;
 	};
 // Mortar Team
 	case 5:
@@ -124,7 +124,7 @@ switch (_mkrType) do
 		_mkrName setMarkerColorLocal _mkrColor;
 		_mkrName setMarkerSizeLocal [0.8, 0.8];
 		_mkrName setMarkerTextLocal _mkrText;
-		_mkrName setMarkerAlphaLocal 0.5;
+		_mkrName setMarkerAlphaLocal 0.6;
 	};
 // Engineers
 	case 6:
@@ -135,7 +135,7 @@ switch (_mkrType) do
 		_mkrName setMarkerColorLocal _mkrColor;
 		_mkrName setMarkerSizeLocal [0.8, 0.8];
 		_mkrName setMarkerTextLocal _mkrText;
-		_mkrName setMarkerAlphaLocal 0.5;
+		_mkrName setMarkerAlphaLocal 0.6;
 	};
 // IFVs and APCs
 	case 7:
@@ -146,7 +146,7 @@ switch (_mkrType) do
 		_mkrName setMarkerColorLocal _mkrColor;
 		_mkrName setMarkerSizeLocal [0.8, 0.8];
 		_mkrName setMarkerTextLocal _mkrText;
-		_mkrName setMarkerAlphaLocal 0.5;
+		_mkrName setMarkerAlphaLocal 0.6;
 	};
 // Tanks
 	case 8:
@@ -157,7 +157,7 @@ switch (_mkrType) do
 		_mkrName setMarkerColorLocal _mkrColor;
 		_mkrName setMarkerSizeLocal [0.8, 0.8];
 		_mkrName setMarkerTextLocal _mkrText;
-		_mkrName setMarkerAlphaLocal 0.5;
+		_mkrName setMarkerAlphaLocal 0.6;
 	};
 // Transport and Attack Helos
 	case 9:
@@ -168,7 +168,7 @@ switch (_mkrType) do
 		_mkrName setMarkerColorLocal _mkrColor;
 		_mkrName setMarkerSizeLocal [0.8, 0.8];
 		_mkrName setMarkerTextLocal _mkrText;
-		_mkrName setMarkerAlphaLocal 0.5;
+		_mkrName setMarkerAlphaLocal 0.6;
 	};
 // Planes and jets
 	case 10:
@@ -179,7 +179,7 @@ switch (_mkrType) do
 		_mkrName setMarkerColorLocal _mkrColor;
 		_mkrName setMarkerSizeLocal [0.8, 0.8];
 		_mkrName setMarkerTextLocal _mkrText;
-		_mkrName setMarkerAlphaLocal 0.5;
+		_mkrName setMarkerAlphaLocal 0.6;
 	};
 // Artillery
 	case 11:
@@ -190,7 +190,7 @@ switch (_mkrType) do
 		_mkrName setMarkerColorLocal _mkrColor;
 		_mkrName setMarkerSizeLocal [0.8, 0.8];
 		_mkrName setMarkerTextLocal _mkrText;
-		_mkrName setMarkerAlphaLocal 0.5;
+		_mkrName setMarkerAlphaLocal 0.6;
 	};
 };
 
