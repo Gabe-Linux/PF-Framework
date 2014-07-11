@@ -335,8 +335,10 @@ switch (_typeofUnit) do
 	{
 		_unit addmagazines [_glriflemag,7];
 		_unit addmagazines [_glriflemag_tr,2];
-		_unit addmagazines [_glmag,3];
+		_unit addmagazines [_glmag,2];
 		_unit addmagazines [_glsmokewhite,4];
+		_unit addmagazines [_glflarewhite,2];
+		_unit addmagazines [_glflarered,2];
 		_unit addweapon _glrifle;					//_COrifle
 		_unit addmagazines [_pistolmag,2];
 		_unit addweapon _pistol;
@@ -354,8 +356,10 @@ switch (_typeofUnit) do
 	{
 		_unit addmagazines [_glriflemag,7];
 		_unit addmagazines [_glriflemag_tr,2];
-		_unit addmagazines [_glmag,3];
+		_unit addmagazines [_glmag,2];
 		_unit addmagazines [_glsmokewhite,4];
+		_unit addmagazines [_glflarewhite,2];
+		_unit addmagazines [_glflarered,2];
 		_unit addweapon _glrifle;					//_DCrifle
 		_unit addmagazines [_pistolmag,2];
 		_unit addweapon _pistol;
@@ -383,8 +387,10 @@ switch (_typeofUnit) do
 	{
 		_unit addmagazines [_glriflemag,7];
 		_unit addmagazines [_glriflemag_tr,2];
-		_unit addmagazines [_glmag,5];
+		_unit addmagazines [_glmag, 2];
 		_unit addmagazines [_glsmokewhite,4];
+		_unit addmagazines [_glflarewhite,2];
+		_unit addmagazines [_glflarered,2];
 		_unit addweapon _glrifle;					//_FTLrifle
 		_unit addmagazines [_grenade,1];
 		_unit addmagazines [_mgrenade,1];
@@ -679,8 +685,10 @@ switch (_typeofUnit) do
 		_unit addmagazines [_glriflemag,7];
 		_unit addmagazines [_glriflemag_tr,2];
 		_unit addweapon _glrifle;
-		_unit addmagazines [_glmag,6];
+		_unit addmagazines [_glmag,2];
 		_unit addmagazines [_glsmokewhite,2];
+		_unit addmagazines [_glflarewhite,2];
+		_unit addmagazines [_glflarered,2];
 		_unit addmagazines [_grenade,3];
 		_unit addmagazines [_mgrenade,3];
 		_unit addmagazines [_smokegrenade,2];
