@@ -33,7 +33,6 @@ case "g":
 	// NO BACKPACK
 	if (f_param_backpacks == 0) then {
 		_unit addmagazines [_glriflemag,2];
-		_unit addmagazines [_glmag,1];
 		_unit addmagazines [_glsmokewhite,1];
 		_unit addmagazines [_grenade,1];_unit addmagazines [_mgrenade,1];
 		_unit addmagazines [_smokegrenade,2];
@@ -43,7 +42,6 @@ case "g":
 		_unit addBackpack _bagsmall;
 		clearMagazineCargoGlobal (unitBackpack _unit);
 		(unitBackpack _unit) addMagazineCargoGlobal [_glriflemag, 4];
-		(unitBackpack _unit) addMagazineCargoGlobal [_glmag, 2];
 		(unitBackpack _unit) addMagazineCargoGlobal [_glsmokewhite, 2];
 		(unitBackpack _unit) addMagazineCargoGlobal [_grenade, 2];
 		(unitBackpack _unit) addMagazineCargoGlobal [_mgrenade, 2];
@@ -54,7 +52,7 @@ case "g":
 		_unit addBackpack _bagmedium;
 		clearMagazineCargoGlobal (unitBackpack _unit);
 		(unitBackpack _unit) addMagazineCargoGlobal [_glriflemag, 6];
-		(unitBackpack _unit) addMagazineCargoGlobal [_glmag, 4];
+		(unitBackpack _unit) addMagazineCargoGlobal [_glmag, 2];
 		(unitBackpack _unit) addMagazineCargoGlobal [_glsmokewhite, 4];
 		(unitBackpack _unit) addMagazineCargoGlobal [_grenade, 4];
 		(unitBackpack _unit) addMagazineCargoGlobal [_mgrenade, 4];
