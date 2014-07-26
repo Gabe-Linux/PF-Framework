@@ -42,6 +42,10 @@ f_var_JIP_GearMenu = false;			// Can JIP/respawned players select their own gear
 // F3 - AI Unit Caching
 [30] spawn f_fnc_cInit;
 
+// F3 - AI Unit Caching
+[30] spawn f_fnc_cInit;
+f_var_cachingAggressiveness = 2;
+
 // F3 - Radio Framework
 [] execVM "f\radios\radio_init.sqf";
 

@@ -32,6 +32,6 @@ f_radios_settings_tfr_defaultLRBackpacks = FALSE;
 // E.G: ["co", "m"] would give the CO and all medics 2 long-range radios
 f_radios_settings_tfr_backpackRadios = [];
 
-// Independent radio encryption code: TRUE use radio code of side they are friendly to
-// if they are only friendly to one side.
+// Independent radio encryption code: Independent faction use radio code of side 
+// they are friendly to if they are only friendly to one side.
 f_radios_settings_tfr_indepUseRadioCode = FALSE;
